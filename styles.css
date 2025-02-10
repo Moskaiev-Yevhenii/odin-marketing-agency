@@ -111,6 +111,9 @@ header {
 .flex-dir-column {
     flex-direction: column;
 }
+.flex-end {
+    align-self: flex-end;
+}
 
 .nav-container {
     gap: 28px;
@@ -252,4 +255,24 @@ header {
     font-weight: 600;
     text-align: center;
     margin: 8px 0;
+}
+
+
+.quote-section {
+    background-color: var(--grey-bg-color);
+    padding: 120px 0;
+}
+.quote-container {
+    max-width: 50%;
+}
+.quote {
+    color: var(--quote-text-color);
+    font-size: var(--quote-text-size);
+    font-weight: var(--quote-text-weight);
+    padding-left: 50px;
+}
+.quote-author {
+    color: var(--quote-text-color);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
