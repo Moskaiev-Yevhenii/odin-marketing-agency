@@ -2,11 +2,12 @@
 :root {
     --light-dark-bg-color: #00214f;
     --dark-bg-color: #030e1d;
+    --grey-bg-color: #dce2eb;
     --light-bg-color: #f7f9ff;
 
     --primary-text-color: #F9FAF8;
     --primary-btn-text-size: 20px;
-    --secondary-text-color: #E5E7Eb;
+    --secondary-text-color: #E5E7EB;
     --secondary-text-size: 18px;
     --dark-secondary-color: #1F2937;
     --quote-text-size: 36px;
@@ -20,8 +21,10 @@
 html {
     font-family: 'Montserrat';
     color: var(--primary-text-color);
-    background-color: var(--light-bg-color);
     font-size: 18px;
+}
+body {
+    background-color: var(--light-bg-color);
 }
 
 * {
@@ -41,8 +44,8 @@ a {
 
 h2 {
     color: var(--dark-secondary-color);
-    font-size: 2rem;
-    margin-bottom: 18px;
+    font-size: 2.5rem;
+    margin: 24px 0;
 }
 
 .subtext {
@@ -75,6 +78,10 @@ section {
 }
 .team-section {
     padding: 48px 0;
+}
+.clients-section {
+    background-color: var(--grey-bg-color);
+    padding-bottom: 80px;
 }
 
 header {
@@ -204,6 +211,31 @@ header {
 }
 .service-link:hover {
     color: var(--light-dark-bg-color);
+}
+
+
+.clients-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    row-gap: 20px;
+}
+
+.company-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.example-logo {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.company-container > p {
+    color: var(--dark-secondary-color);
+    text-wrap: nowrap;
 }
 
 
