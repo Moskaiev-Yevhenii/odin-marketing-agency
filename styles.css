@@ -109,6 +109,7 @@ header {
     align-items: center;
 }
 .flex-dir-column {
+    display: flex;
     flex-direction: column;
 }
 .flex-end {
@@ -172,6 +173,13 @@ header {
 
 .small-padding {
     padding: 16px 48px;
+}
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid var(--light-bg-color);
+}
+.btn-transparent:hover {
+    border: 2px solid var(--light-bg-color); 
 }
 
 .hero-section {
@@ -269,10 +277,35 @@ header {
     color: var(--quote-text-color);
     font-size: var(--quote-text-size);
     font-weight: var(--quote-text-weight);
-    padding-left: 50px;
+    padding-left: 70px;
 }
 .quote-author {
     color: var(--quote-text-color);
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.signup-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+.signup-container {
+    justify-content: space-evenly;
+    max-width: 82%;
+    background-color: var(--primary-color);
+    padding: 36px 0;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+.call-to-action {
+    color: var(--primary-text-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+footer {
+    background-color: var(--light-dark-bg-color);
+    text-align: center;
+    padding: 32px 0;
 }
